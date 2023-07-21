@@ -1,0 +1,722 @@
+{
+	// "easycom": {
+	// 		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+	// 		"custom": {  
+	// 	        "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue" 
+	// 		}
+	// 	},
+
+	"pages": [
+
+
+		{
+			"path": "pages/liveView/index",
+
+			"style": {
+				"navigationBarTitleText": "直播",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"style": "circle",
+						"color": "#F0222C",
+						"offset": "290rpx"
+					},
+					"bounce": "none"
+				}
+
+			}
+		},
+		{
+			"path": "pages/firing2/index",
+			"style": {
+
+				"navigationStyle": "custom",
+				"disableSwipeBack": true,
+				"app-plus": {
+					"animationType": "fade-in", // 弹窗进入方式
+					"bounce": "none",
+					"popGesture": "none" // 关闭IOS屏幕左边滑动关闭当前页面的功能
+				}
+
+			}
+		},
+		{
+			"path": "pages/liveView/broadcast/index",
+			"style": {
+				"navigationBarTitleText": "直播-聊天",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"softinputMode": "adjustResize",
+					"bounce": "none",
+					"subNVues": [{
+						"path": "pages/liveView/broadcast/uvue/danm", //路径地址
+						"id": "subNvue", //唯一id，一个页面下最多三个最好，否则影响性能
+						"type": "popup",
+						// 如果是弹窗可开启
+						//这个是初始样式，当然初始想隐藏的话，这个不重要
+						"style": {
+							"position": "absolute",
+							"top": "0px",
+							"width": "100%",
+							"height": "100rpx",
+							"background": "transparent",
+							"z-index": "999999999999"
+						}
+					}]
+				}
+			}
+		},
+
+		{
+			"path": "pages/liveView/accomplishedperson/accomplishedperson",
+			"style": {
+
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+
+		{
+			"path": "pages/advice/index",
+			"style": {
+				"navigationBarTitleText": "资讯",
+				"navigationStyle": "custom",
+				"onReachBottomDistance": 40,
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"style": "circle",
+						"color": "#F0222C",
+						"offset": "204rpx"
+					},
+					"bounce": "none"
+				}
+			}
+
+		},
+
+
+		{
+			"path": "pages/rateView/index",
+			"style": {
+				"navigationBarTitleText": "赛事",
+				"navigationStyle": "custom",
+				"onReachBottomDistance": 40,
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"style": "circle",
+						"color": "#F0222C",
+						"offset": "240rpx"
+					},
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/chatView/index",
+			"style": {
+				"navigationBarTitleText": "聊天",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/shop/shop",
+			"style": {
+				// "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/shop/shopRecord",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/messagecontent/index",
+			"style": {
+				// "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+
+		},
+		{
+			"path": "pages/chatView/chatcontent/chatcontent",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/recharge/recharge",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/anchor/anchor",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/profile/index",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/profile/pwd_modify",
+			"style": {
+				"navigationBarTitleText": "密码修改",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/profile/user_modify",
+			"style": {
+				"navigationBarTitleText": "昵称修改",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/profile/level",
+			"style": {
+				"navigationBarTitleText": "我的等级",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/chatView/chatcontent-two/chatcontent-two",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/chatView/set/set",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/chatView/member/member",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/cMoney/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/zbCenter/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/msgCenter/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/msgCenter/messages",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/helpCenter/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/lookHistory/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/reCenter/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/yjFk/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/zxkf/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/onlineKf/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/userXy/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+
+		{
+			"path": "pages/ysXy/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/privilege/privilege",
+			"style": {
+				// "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/mygz/index",
+			"style": {
+				// "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/mygz/gzdetail/index",
+			"style": {
+				// "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/lingrecord/index",
+			"style": {
+				// "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/myView/recharge/details/details",
+			"style": {
+				// "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		}
+
+		, {
+			"path": "pages/login/verification",
+			"style": {
+				"navigationBarTitleText": "",
+				// "enablePullDownRefresh": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		}
+
+		, {
+			"path": "pages/myView/setting/setting",
+			"style": {
+				"navigationStyle": "custom",
+				// "navigationBarTitleText": "",
+				// "enablePullDownRefresh": false
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/myView/setting/notice",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/myView/setting/edition",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		}
+
+		, {
+			"path": "pages/chatView/addgroup/addgroup",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/rateView/search/search",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/rateView/sift/sift",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/fans/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/record/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/myView/recharge/rechargexy/rechargexy",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/TUIKit/TUIPages/TUIConversation/index",
+			"style": {
+				// "navigationBarTitleText": "云通信 IM"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/TUIKit/TUIPages/TUIConversation/create",
+			"style": {
+				"navigationBarTitleText": "选择联系人",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/TUIKit/TUIPages/TUIChat/index",
+			"style": {
+				// "navigationBarTitleText": "云通信 IM",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"scrollIndicator": "none", // 当前页面不显示滚动条
+					"softinputNavBar": "none", // App平台在iOS上，webview中的软键盘弹出时，默认在软键盘上方有一个横条，显示着：上一项、下一项和完成等按钮
+					"bounce": "none" // 页面回弹
+				}
+			}
+		},
+		{
+			"path": "pages/TUIKit/TUIPages/TUIChat/components/message-elements/video-play",
+			"style": {
+				"navigationBarTitleText": "云通信 IM",
+				"app-plus": {}
+			}
+		},
+		{
+			"path": "pages/TUIKit/TUIPages/TUIGroup/index",
+			"style": {
+				// "navigationBarTitleText": "群管理",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/TUIKit/TUIPages/TUIGroup/memberOperate"
+		}
+
+	],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"custom": true,
+		"color": "#8E92A4",
+		"selectedColor": "#F0222C",
+		"backgroundColor": "#FFFFFF",
+		"fontSize": "10px",
+		"spacing": "4px",
+		"iconWidth": "22px",
+		"list": [{
+    		"pagePath": "pages/rateView/index",
+    		"iconPath": "/static/image/myview/unss.png",
+    		"selectedIconPath": "/static/image/myview/ss.png",
+    		"text": "赛事"
+    	},
+    	{
+    		"pagePath": "pages/advice/index",
+    		"iconPath": "/static/image/myview/unzx.png",
+    		"selectedIconPath": "/static/image/myview/zx.png",
+    		"text": "资讯"
+    	},
+    
+    	{
+    		"pagePath": "pages/liveView/index",
+    		"iconPath": "/static/image/myview/unzb.png",
+    		"selectedIconPath": "/static/image/myview/zb.png",
+    		"text": "直播"
+    
+    	},
+    	{
+    		"pagePath": "pages/TUIKit/TUIPages/TUIConversation/index",
+    		// "pagePath": "pages/chatView/index",
+    		"iconPath": "/static/image/myview/unlt.png",
+    		"selectedIconPath": "/static/image/myview/lt.png",
+    		"text": "聊天"
+    	},
+    	{
+    		"pagePath": "pages/myView/index",
+    		"iconPath": "/static/image/myview/unwd.png",
+    		"selectedIconPath": "/static/image/myview/wd.png",
+    		"text": "我的"
+    	}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

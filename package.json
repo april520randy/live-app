@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@tencentcloud/chat-uikit-uniapp": "^1.1.1",
+    "@varlet/ui": "^2.9.0",
+    "dplayer": "^1.27.1",
+    "hls.js": "^1.4.5",
+    "image-tools": "^1.4.0",
+    "lodash": "^4.17.21",
+    "marked": "^4.3.0",
+    "mitt": "^3.0.0",
+    "mp-html": "^2.4.1",
+    "vue-danmaku": "^1.7.0",
+    "vue3-danmaku": "^1.4.0-beta.1"
+  },
+  "devDependencies": {
+    "crypto-js": "^4.1.1"
+  },
+  "id": "tf-verify-img",
+  "name": "高性能多端拼图滑动验证",
+  "version": "1.0.2",
+  "description": "一款高性能的多端拼图滑动验证组件",
+  "keywords": [
+    "拼图",
+    "滑动验证"
+  ],
+  "dcloudext": {
+    "category": [
+      "前端组件",
+      "通用组件"
+    ]
+  }
+}
